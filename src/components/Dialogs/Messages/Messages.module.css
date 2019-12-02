@@ -1,0 +1,15 @@
+.item {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.ac_0 {
+    align-self: flex-end;
+    margin-right: 20px;
+}
+.ac_1{
+    align-self: flex-start;
+    margin-left: 20px;
+}

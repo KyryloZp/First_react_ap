@@ -1,0 +1,26 @@
+.content {
+    grid-area: nav;
+    background-color: burlywood;
+}
+.item {
+    list-style-type: none;
+    padding: 10px;
+}
+.item a {
+    color: white;
+    text-decoration: none;
+}
+.item a.active {
+    color: gold;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+}
+.name {
+    display: block;
+}
+.friends {
+    list-style-type: none;
+}

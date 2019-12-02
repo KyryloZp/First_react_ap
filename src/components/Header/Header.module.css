@@ -1,0 +1,7 @@
+.content{
+    grid-area: header;
+    background: green;
+}
+.content img {
+    width: 50px;
+}

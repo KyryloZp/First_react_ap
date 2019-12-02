@@ -1,0 +1,28 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas:    "title title"
+                            "dialogs messages";
+}
+.title {
+    grid-area: title;
+}
+.dialogeList {
+    color: cornflowerblue;
+    grid-area: dialogs;
+}
+.messagBlock {
+    grid-area: messages;
+    background: #5077BE;
+    padding: 20px;
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+.textBox {
+    grid-area: textBox;
+}
+.addMessage {
+    grid-area: addMessage;
+}
