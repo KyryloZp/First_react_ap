@@ -2,21 +2,20 @@ import React from 'react'
 import s from './Dialogs.module.css'
 import Dialog from "./Dialog/Dialog";
 import Messages from "./Messages/Messages";
-import {addMessageActionCreator, updateMessageActionCreator} from "../../Redux/State";
 
 
 const Dialogs = (props) => {
-    let Message =  props.state.messageList.map(m => <Messages content={m.message} accountId={m.accountId}/>);
-    let DialogList = props.state.dialogList.map(d => <Dialog name={d.name} accountId={d.id}/>);
-    let newMessage = props.state.newMessage;
+    let Message =  props.messageList.map(m => <Messages content={m.message} key={m.id} accountId={m.accountId}/>);
+    let DialogList = props.dialogList.map(d => <Dialog name={d.name}  key={d.id} accountId={d.id}/>);
+    let newMessage = props.newMessage;
 
     let addMessage = () => {
-        props.dispatch(addMessageActionCreator());
+        props.postMessage();
     };
 
     let updateMessage = (e)=> {
         let message = e.target.value;
-        props.dispatch(updateMessageActionCreator(message));
+        props.updateMessage(message);
     };
     return (
         <div className={s.dialogs}>

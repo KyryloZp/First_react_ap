@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ada4d90-0a63-45f0-98d4-67bf6bba71cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/State.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialog/Dialog.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialog/Dialog.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Messages/Messages.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Messages/Messages.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Music/Music.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Music/Music.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/News.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/News.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Settings/Settings.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Settings/Settings.module.css" afterDir="false" />
+    <list default="true" id="3ada4d90-0a63-45f0-98d4-67bf6bba71cf" name="Default Changelist" comment="First React AP">
+      <change afterPath="$PROJECT_DIR$/src/Redux/mainPage-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/messagePage-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/profilePage-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/store.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/PostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/State.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,13 +41,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ec42859b-9a56-48cc-b657-7e83fd15f8c0" />
   </component>
   <component name="ProjectId" id="1ThP2iRfzOeUJQ5tgcs3Rks369r" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -71,20 +61,21 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\react\1\src" />
-      <recent name="D:\react\1\src\components\Profile\Posts\ProfileInfo" />
-      <recent name="D:\react\1\src\components\Dialogs\Messages" />
-      <recent name="D:\react\1\src\components\Dialogs\message" />
-      <recent name="D:\react\1\src\components\Dialogs\person" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\react\1\src\components\Users\UserItem" />
       <recent name="D:\react\1\src\components\Profile" />
       <recent name="D:\react\1\src\components\Navbar" />
       <recent name="D:\react\1\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\react\1\src\components\Header" />
+      <recent name="I:\react\1\src\Redux" />
+      <recent name="I:\react\1\src\components\Users" />
+      <recent name="D:\react\1\src\components\Users" />
+      <recent name="D:\react\1\src\components\Profile\Posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +100,7 @@
       <scripts>
         <script value="start" />
       </scripts>
-      <node-interpreter value="project" />
+      <node-interpreter value="C:/Program Files/nodejs/node" />
       <envs />
       <method v="2" />
     </configuration>
@@ -137,8 +128,32 @@
       <workItem from="1575044603233" duration="1507000" />
       <workItem from="1575103345849" duration="9149000" />
       <workItem from="1575188320270" duration="21311000" />
-      <workItem from="1575303017855" duration="4269000" />
+      <workItem from="1575303017855" duration="5437000" />
+      <workItem from="1575387387513" duration="8465000" />
+      <workItem from="1575474844231" duration="8135000" />
+      <workItem from="1575553893187" duration="11464000" />
+      <workItem from="1575648142927" duration="650000" />
+      <workItem from="1575704377978" duration="12506000" />
+      <workItem from="1575722583195" duration="75000" />
+      <workItem from="1575734169930" duration="8395000" />
+      <workItem from="1575827971516" duration="600000" />
+      <workItem from="1575887315397" duration="3021000" />
+      <workItem from="1575914047072" duration="5781000" />
+      <workItem from="1575965824576" duration="22979000" />
+      <workItem from="1576065823119" duration="9099000" />
+      <workItem from="1576152094394" duration="8557000" />
+      <workItem from="1576231200099" duration="8262000" />
+      <workItem from="1576244536571" duration="8387000" />
+      <workItem from="1576400733900" duration="6699000" />
     </task>
+    <task id="LOCAL-00001" summary="First React AP">
+      <created>1575314214404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575314214404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +171,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First React AP" />
+    <option name="LAST_COMMIT_MESSAGE" value="First React AP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
