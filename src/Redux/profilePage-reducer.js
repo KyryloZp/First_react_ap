@@ -1,5 +1,4 @@
-import {UserAPI} from "../api/api";
-import {toggleFollowingProcess, unfollowSucces} from "./usersPage-reducer";
+import {userAPI} from "../api/api";
 
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
@@ -48,7 +47,7 @@ const profilePageReducer = (state = initialState, action) => {
 
 export const getProfileInfo = (userId) => {
     return (dispatch) => {
-        UserAPI.getUserProfile(userId).then(data => {
+        userAPI.getUserProfile(userId).then(data => {
             dispatch(setUserProfile(data));
         })
     }

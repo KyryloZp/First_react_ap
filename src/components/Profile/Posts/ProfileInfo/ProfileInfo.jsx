@@ -1,27 +1,60 @@
 import React from 'react';
 import s from "./ProfileInfo.module.css";
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+
     return (
         <div className={s.info}>
             <div className={s.avatar}>
-                <img src="http://gloria-mur.ru/wp-content/uploads/2017/05/avatar1-740x463.jpg" alt="s" />
+                <img src={props.state.photos.small} alt="s" />
             </div>
             <div className={s.about}>
                 <div className={s.name}>
-                    David Guetta
+                    {props.state.fullName}
                 </div>
-                <div className={s.dateBirth}>
-                    2 january
+                <div className={s.status}>
+                    {props.state.aboutMe}
                 </div>
-                <div className={s.city}>
-                    Lodon
+                <div className={s.jobDesrc}>
+                    {props.state.lookingForAJobDescription}
                 </div>
-                <div className={s.education}>
-                    Hight
+                <div className={s.lookingJob}>
+                    {props.state.lookingForAJob ? 'В поисках' : 'Работаю'}
                 </div>
                 <div className={s.webSite}>
-                    www.london.com
+                    <h3>Contacts:</h3>
+                    <div className={s.webSite}>
+                        <span>facebook:</span>
+                        <span>{props.state.contacts.facebook}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>website:</span>
+                        <span>{props.state.contacts.website}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>vk:</span>
+                        <span>{props.state.contacts.vk}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>twitter:</span>
+                        <span>{props.state.contacts.twitter}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>instagram:</span>
+                        <span>{props.state.contacts.instagram}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>youtube:</span>
+                        <span>{props.state.contacts.youtube}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>github:</span>
+                        <span>{props.state.contacts.github}</span>
+                    </div>
+                    <div className={s.webSite}>
+                        <span>mainLink:</span>
+                        <span>{props.state.contacts.mainLink}</span>
+                    </div>
                 </div>
             </div>
         </div>

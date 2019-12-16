@@ -5,3 +5,9 @@
 .content img {
     width: 50px;
 }
+.aut_block {
+    float: right;
+}
+.auth_login {
+    color: white;
+}

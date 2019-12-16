@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ada4d90-0a63-45f0-98d4-67bf6bba71cf" name="Default Changelist" comment="First React AP">
-      <change afterPath="$PROJECT_DIR$/src/Redux/mainPage-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/messagePage-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/profilePage-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/store.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/users-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/PostsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+    <list default="true" id="3ada4d90-0a63-45f0-98d4-67bf6bba71cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/State.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/profilePage-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profilePage-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +136,8 @@
       <workItem from="1576152094394" duration="8557000" />
       <workItem from="1576231200099" duration="8262000" />
       <workItem from="1576244536571" duration="8387000" />
-      <workItem from="1576400733900" duration="6699000" />
+      <workItem from="1576400733900" duration="19587000" />
+      <workItem from="1576510561614" duration="2461000" />
     </task>
     <task id="LOCAL-00001" summary="First React AP">
       <created>1575314214404</created>
@@ -153,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575314214404</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Thunk">
+      <created>1576412304284</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576412304284</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +174,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First React AP" />
-    <option name="LAST_COMMIT_MESSAGE" value="First React AP" />
+    <MESSAGE value="Thunk" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thunk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
