@@ -1,19 +1,41 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import s from "./ProfileInfo.module.css";
 
 const ProfileInfo = (props) => {
 
+    let [editMode, setEditMode] = useState(false);
+    let [status, setStatus] = useState(props.status);
+
+    useEffect( () => {
+        setStatus(props.status)
+    }, [props.status] );
+
+    let editModeActivate = () => {
+        setEditMode(true);
+    };
+
+    let DeactivateEditMode = () => {
+        setEditMode(false);
+        props.postStatus(status);
+    };
+
+    let onChangeStatus = (e) => {
+        setStatus(e.currentTarget.value)
+    };
+
     return (
         <div className={s.info}>
             <div className={s.avatar}>
-                <img src={props.state.photos.small} alt="s" />
+                <img src={props.state.photos.small} alt="s"/>
             </div>
             <div className={s.about}>
                 <div className={s.name}>
                     {props.state.fullName}
                 </div>
                 <div className={s.status}>
-                    {props.state.aboutMe}
+                    {editMode ? <input value={status} onBlur={DeactivateEditMode}
+                                                  autoFocus={true} onChange={onChangeStatus}/>
+                        : <span onDoubleClick={editModeActivate}>{props.status || 'Статуса нет'}</span>}
                 </div>
                 <div className={s.jobDesrc}>
                     {props.state.lookingForAJobDescription}
@@ -58,7 +80,7 @@ const ProfileInfo = (props) => {
                 </div>
             </div>
         </div>
-            );
+    )
 };
 
 export default ProfileInfo;

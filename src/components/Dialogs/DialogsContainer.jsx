@@ -1,6 +1,6 @@
 import React from 'react';
 import Dialogs from "./Dialogs";
-import {addMessageActionCreator, updateMessageActionCreator} from "../../Redux/messagePage-reducer";
+import {postMessage} from "../../Redux/messagePage-reducer";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {connect} from "react-redux";
 import {compose} from "redux";
@@ -9,19 +9,14 @@ import {compose} from "redux";
 let mapStateToProps = (state) => {
     return {
         dialogList: state.messagePage.dialogList,
-        messageList: state.messagePage.messageList,
-        newMessage: state.messagePage.newMessage
+        messageList: state.messagePage.messageList
     }
 };
 
 let mapDispatchToProps = (dispatch) => {
   return {
-      postMessage: () => {
-          dispatch(addMessageActionCreator())
-      },
-      updateMessage: (text) => {
-          dispatch(updateMessageActionCreator(text));
-
+      postMessage: (text) => {
+          dispatch(postMessage(text))
       }
   }
 };

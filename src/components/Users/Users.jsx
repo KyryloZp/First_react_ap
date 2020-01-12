@@ -1,20 +1,16 @@
 import React from 'react';
 import style from './Users.module.css';
 import UsersItem from "./UserItem/usersItem";
+import Paginator from "../common/Paginator/Paginator";
 
 let Users = (props) => {
-    let pagesCount = Math.ceil(props.totalUserCount / props.pageSize);
-    let pages = [];
-    for (let i = 1; i <= pagesCount; i++) {
-        pages.push(i);
-    }
 
-    let pagesButton = pages.map(i => <button
-        className={props.currentPage === i ? style.selectPage : style.pageCount}
-        onClick={() => {props.onPageChange(i)}}>{i}</button>);
     return (
         <div className={style.Users}>
-            {pagesButton}
+            <Paginator  totalItemCount={props.totalUserCount}
+                        pageSize={props.pageSize}
+                        currentPage={props.currentPage}
+                        onPageChange={props.onPageChange} />
             <div className={style.title}>
                 <h3>Users</h3>
             </div>

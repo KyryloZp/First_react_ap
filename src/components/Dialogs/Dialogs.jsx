@@ -2,20 +2,32 @@ import React from 'react'
 import s from './Dialogs.module.css'
 import Dialog from "./Dialog/Dialog";
 import Messages from "./Messages/Messages";
+import {Field, reduxForm} from "redux-form";
+import {getAuthLogIn} from "../../Redux/auth-reducer";
+import {maxLength, required} from "../../utils/validators";
+import {renderTextarea} from "../common/FormsControls/FormsControls";
 
+const maxFormLength = maxLength(5);
+
+
+let DialogForm = (props) => {
+    return (
+    <form onSubmit={props.handleSubmit}>
+       <Field name="message" className={s.textBox} component={renderTextarea} placeholder='Enter your message' validate={[required, maxFormLength]} />
+        <button className={s.addMessage} type='submit'>Add message</button>
+    </form>
+    )}
+
+    DialogForm = reduxForm({
+        form: 'DialogForm'
+    })(DialogForm);
 
 const Dialogs = (props) => {
-    let Message =  props.messageList.map(m => <Messages content={m.message} key={m.id} accountId={m.accountId}/>);
-    let DialogList = props.dialogList.map(d => <Dialog name={d.name}  key={d.id} accountId={d.id}/>);
-    let newMessage = props.newMessage;
+    let Message = props.messageList.map(m => <Messages content={m.message} key={m.id} accountId={m.accountId}/>);
+    let DialogList = props.dialogList.map(d => <Dialog name={d.name} key={d.id} accountId={d.id}/>);
 
-    let addMessage = () => {
-        props.postMessage();
-    };
-
-    let updateMessage = (e)=> {
-        let message = e.target.value;
-        props.updateMessage(message);
+    const onsubmit = (formData) => {
+        props.postMessage(formData.message)
     };
 
     return (
@@ -28,9 +40,7 @@ const Dialogs = (props) => {
                 <div className={s.messages}>
                     {Message}
                 </div>
-                <textarea name="name" className={s.textBox}
-                          value={newMessage} onChange={updateMessage} placeholder='Enter your message'/>
-                <button className={s.addMessage} onClick={addMessage}>Add message</button>
+                <DialogForm  onSubmit={onsubmit}/>
             </div>
 
         </div>

@@ -2,17 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ada4d90-0a63-45f0-98d4-67bf6bba71cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/app-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withSuspense.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/reducerUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/messagePage-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/messagePage-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/profilePage-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/profilePage-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/PostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/PostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -43,7 +57,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -57,17 +71,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\react\1\src\components\common" />
       <recent name="I:\react\1\src\components\Users\UserItem" />
       <recent name="D:\react\1\src\components\Profile" />
       <recent name="D:\react\1\src\components\Navbar" />
       <recent name="D:\react\1\src\components\Header" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="J:\react\1\src\hoc" />
+      <recent name="J:\react\1\src\Redux" />
       <recent name="I:\react\1\src\components\Header" />
       <recent name="I:\react\1\src\Redux" />
       <recent name="I:\react\1\src\components\Users" />
-      <recent name="D:\react\1\src\components\Users" />
-      <recent name="D:\react\1\src\components\Profile\Posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -137,7 +152,21 @@
       <workItem from="1576231200099" duration="8262000" />
       <workItem from="1576244536571" duration="8387000" />
       <workItem from="1576400733900" duration="19587000" />
-      <workItem from="1576510561614" duration="2461000" />
+      <workItem from="1576510561614" duration="5943000" />
+      <workItem from="1576601275781" duration="5119000" />
+      <workItem from="1576687713692" duration="6524000" />
+      <workItem from="1576772231935" duration="2900000" />
+      <workItem from="1577004715851" duration="13230000" />
+      <workItem from="1577116485625" duration="4723000" />
+      <workItem from="1577211700991" duration="205000" />
+      <workItem from="1577262190008" duration="4881000" />
+      <workItem from="1577369477789" duration="7091000" />
+      <workItem from="1578063842146" duration="3997000" />
+      <workItem from="1578224131160" duration="2872000" />
+      <workItem from="1578500428720" duration="5883000" />
+      <workItem from="1578588787221" duration="5265000" />
+      <workItem from="1578742146188" duration="6352000" />
+      <workItem from="1578823094229" duration="5251000" />
     </task>
     <task id="LOCAL-00001" summary="First React AP">
       <created>1575314214404</created>
@@ -153,11 +182,28 @@
       <option name="project" value="LOCAL" />
       <updated>1576412304284</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Compose">
+      <created>1576514410783</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576514410783</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -175,7 +221,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First React AP" />
     <MESSAGE value="Thunk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thunk" />
+    <MESSAGE value="Compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,10 +230,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Music/Music.jsx</url>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Profile/Posts/ProfileInfo/ProfileInfo.jsx</url>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

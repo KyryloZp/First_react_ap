@@ -1,0 +1,9 @@
+.pageCount,
+.selectPage{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.selectPage {
+    font-weight: bold;
+}

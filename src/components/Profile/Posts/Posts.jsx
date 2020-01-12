@@ -1,22 +1,32 @@
 import React from 'react';
 import s from "./Posts.module.css";
 import Post from "./Post/Post";
+import {Field, reduxForm} from "redux-form";
+import {maxLength, required} from "../../../utils/validators";
+import {renderTextarea} from "../../common/FormsControls/FormsControls";
 
+let maxFormLength = maxLength(5);
+
+let PostForm = (props) => {
+    return (
+        <form onSubmit={props.handleSubmit}>
+            <Field className="textInput" name={'newPost'} placeholder='Enter your post' component={renderTextarea} validate={[required, maxFormLength]}></Field>
+            <button type={'submit'}>Add post</button>
+        </form>
+    )
+}
+
+PostForm = reduxForm({
+    form: 'PostForm'
+})(PostForm)
 
 const Posts = (props) => {
     const message = props.postList.map(m => <Post id={m.id} key={m.id} message={m.message}/>);
-    let newPostText = props.newPostValue;
+    const onSubmit = (formData) => { props.addNewPost(formData.newPost)};
 
-    let addPost = () => { props.addNewPost()};
-
-    let updatePostText = (e) => {
-        let textValue = e.target.value;
-        props.updateNewPost(textValue);
-    };
     return (
         <div className={s.wall}>
-            <textarea className="textInput" onChange={updatePostText} value={newPostText} placeholder='Enter your post'></textarea>
-            <button onClick={addPost}>Add post</button>
+            <PostForm onSubmit={onSubmit}/>
             <div className={s.posts}>
                 {message}
             </div>

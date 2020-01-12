@@ -1,0 +1,7 @@
+.formValidate.error {
+    border: 2px solid red;
+}
+
+.validateDescription{
+    color: red;
+}
