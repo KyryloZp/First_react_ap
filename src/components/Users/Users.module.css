@@ -1,0 +1,42 @@
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.followButton {
+    border: none;
+    background: green;
+    padding: 5px 15px;
+    color: white;
+}
+.followButton:disabled {
+    background: grey;
+    color: black;
+}
+.descr {
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    color: darkgray;
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px;
+    align-items: center;
+}
+.leftColumn {
+    text-align: center;
+    margin-right: 40px;
+}
+.fullName {
+    margin-bottom: 15px;
+}
+.Users {
+    background: white;
+}
